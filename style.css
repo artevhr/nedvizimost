@@ -53,7 +53,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:3
 .hero-img{
   position:absolute;inset:0;
   background-color:#1c1c1a;
-  background-image:url('https://picsum.photos/seed/hero/1800/1200');
+  background-image:url('https://placehold.co/1800x1200/1c1c1a/f7f6f3?text=Meridian');
   background-size:cover;
   background-position:center;
   filter:brightness(.55);
