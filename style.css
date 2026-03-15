@@ -52,7 +52,10 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:3
 .hero{height:100vh;display:grid;grid-template-rows:1fr auto;position:relative;overflow:hidden}
 .hero-img{
   position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=90') center/cover;
+  background-color:#1c1c1a;
+  background-image:url('https://picsum.photos/seed/hero/1800/1200');
+  background-size:cover;
+  background-position:center;
   filter:brightness(.55);
 }
 .hero-body{
@@ -115,7 +118,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:3
 .card{background:var(--bg);overflow:hidden;cursor:pointer;transition:background .2s}
 .card:hover{background:var(--bg2)}
 .card:hover .cimg{transform:scale(1.05)}
-.cimg-wrap{aspect-ratio:4/3;overflow:hidden}
+.cimg-wrap{aspect-ratio:4/3;overflow:hidden;background:var(--bg2)}
 .cimg{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.25,.46,.45,.94);display:block}
 .cbody{padding:24px 24px 28px}
 .ctop{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
@@ -224,9 +227,7 @@ footer{background:var(--ink);border-top:1px solid rgba(247,246,243,.08);padding:
 .flinks{display:flex;gap:28px}
 .flinks a{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,246,243,.3);text-decoration:none;transition:color .2s}
 .flinks a:hover{color:#f7f6f3}
-.rv{opacity:0;transform:translateY(20px);transition:opacity .75s cubic-bezier(.25,.46,.45,.94),transform .75s cubic-bezier(.25,.46,.45,.94)}
-.rv.in{opacity:1;transform:none}
-.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+.rv{opacity:1;transform:none}
 .mob-nav{display:none;position:fixed;top:0;left:0;width:100%;z-index:200;background:var(--ink);padding:18px 24px;align-items:center;justify-content:space-between}
 .mob-logo{font-family:var(--serif);font-size:18px;color:#f7f6f3;text-decoration:none}
 .mob-logo span{font-style:italic;color:var(--accent2)}
