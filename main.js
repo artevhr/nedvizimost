@@ -46,7 +46,7 @@ function openModal(card) {
     `<div class="mspec"><div class="mspec-v">${s[0]}</div><div class="mspec-l">${s[1]}</div></div>`
   ).join('');
   document.getElementById('mMap').src =
-    `https:
+    `https://yandex.ru/map-widget/v1/?ll=${d.ll}&z=16&pt=${d.pt}&l=map`;
   document.getElementById('modalOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
